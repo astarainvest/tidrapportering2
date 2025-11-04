@@ -39,6 +39,61 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+/* --- Responsive Design --- */
+@media (max-width: 767px) {
+    body {
+        font-size: 15px;
+    }
+    .container, .main {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .card, .dashboard-stat-card {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    .footer {
+        font-size: 0.9rem;
+    }
+    .btn, .nav-link, .dropdown-toggle {
+        min-height: 40px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    .container, .main {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+    .navbar-nav {
+        flex-direction: row;
+    }
+    .card, .dashboard-stat-card {
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+    }
+    .footer {
+        font-size: 1rem;
+    }
+    .btn, .nav-link, .dropdown-toggle {
+        min-height: 44px;
+        font-size: 1.1rem;
+    }
+}
+
 /* Förhindra zoom vid fokus på input (iOS) */
 input[type="text"],
 input[type="email"],
