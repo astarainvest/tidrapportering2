@@ -9,8 +9,8 @@ from functools import wraps
 app = Flask(__name__)
 
 # Konfiguration
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY') or 'din-hemliga-nyckel-här-byt-ut-denna'
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL') or 'sqlite:///tidrapportering.db'
+app.config['SECRET_KEY'] = 'din-hemliga-nyckel-här-byt-ut-denna'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tidrapportering.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Sessionskonfiguration - användare loggas ut vid serveromstart
@@ -961,6 +961,4 @@ if __name__ == '__main__':
             
             print("Exempel-klienter och projekt skapade")
     
-if __name__ == '__main__':
-    # For local development
     app.run(debug=True, host='127.0.0.1', port=5000)
