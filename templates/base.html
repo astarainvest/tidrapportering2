@@ -10,7 +10,12 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+            <link id="device-css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+            <script>
+                if (/Mobi|Android/i.test(navigator.userAgent)) {
+                    document.getElementById('device-css').href = "{{ url_for('static', filename='css/style-mobile.css') }}";
+                }
+            </script>
     
     {% block head %}{% endblock %}
 </head>

@@ -1,0 +1,48 @@
+/* Mobile-specific styles for Tidrapportering */
+
+body {
+    font-size: 15px;
+    background-color: #f5f5f5;
+}
+
+.container, .main {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navbar-brand {
+    font-size: 1rem;
+}
+
+.navbar-nav {
+    flex-direction: column;
+}
+
+.card, .dashboard-stat-card {
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.footer {
+    font-size: 0.9rem;
+}
+
+.btn, .nav-link, .dropdown-toggle {
+    min-height: 40px;
+    font-size: 1rem;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+}
+
+.card-header {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.card-body {
+    font-size: 1rem;
+    padding: 1rem;
+}
